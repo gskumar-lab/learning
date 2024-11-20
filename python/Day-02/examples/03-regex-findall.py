@@ -1,11 +1,11 @@
 import re
 
-text = "The quick brown fox"
-pattern = r"brown"
+text = "The quick brown fox pick "
+pattern = r"ic"
 
-search = re.search(pattern, text)
-if search:
-    print("Pattern found:", search.group())
+find = re.findall(pattern, text)
+if find:
+    print("Pattern found:", find)
 else:
     print("Pattern not found")
 
